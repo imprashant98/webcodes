@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Example</title>
+  </head>
+
+  <body>
+    <div>
+      <h1>Final Exam HTML</h1>
+      <div>
+        <h2 style="color: coral">FeedBack/Comment Form</h2>
+        <form action="#" method="post">
+          Name:
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Your name"
+          /><br /><br />
+          Email:
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="ab@c.com"
+          /><br /><br />
+          Mobile:
+          <input
+            type="tel"
+            name="contact"
+            id="contact"
+            placeholder="Mobile no"
+          /><br /><br />
+          Gender:
+          <select name="gender" id="gender">
+            <option value="male" selected>Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option></select
+          ><br /><br />
+          Date of Birth:
+          <select name="day" id="day">
+            <option value="day">Day</option>
+          </select>
+          <select name="month" id="month">
+            <option value="month">Month</option>
+          </select>
+          <select name="year" id="year">
+            <option value="year">Year</option></select
+          ><br /><br /><br />
+          <textarea
+            name="comment"
+            id="comment"
+            cols="30"
+            rows="5"
+            placeholder="Write a comment/feedback here..."
+          ></textarea
+          ><br /><br />
+          <br />
+
+          <br /><br /><br />
+          <input type="radio" name="gender" id="gender" value="f" /> Feedback
+          <input type="radio" name="gender" id="gender" value="m" checked />
+          Comments
+          <input type="radio" name="gender" id="gender" value="u" /> Others
+
+          <br /><br /><br />
+          <input type="checkbox" name="gender" id="gender" value="f" checked />
+          <i> I hereby submit the form by following rules and regulations</i>.
+
+          <br /><br /><br />
+          <input type="file" name="file" id="file" accept="image/*" />
+          <br /><br /><br />
+          <input type="reset" name="reset" value="Reset" />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

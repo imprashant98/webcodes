@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Question 2</title>
+</head>
+
+<body>
+    <h1>Odd numbers divisible by 7, between 100 to 200</h1>
+    <script language="JavaScript" type="text/javascript">
+        var sum = 0;
+        for (let i = 101; i <= 200; i += 2) {
+            if (i % 7 === 0) {
+                document.write(i + "<br>");
+                sum += i;
+            }
+        }
+        document.write("<br>The sum is = " + sum);
+    </script>
+</body>
+
+</html>

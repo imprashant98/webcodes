@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Table Example</title>
+</head>
+
+<body>
+    <div>
+        <h2>Final 6 (a)</h2>
+        <div>
+            <h1>Contact Form</h1>
+            <form action="#" method="post">
+                Name: <input type="text" name="name" id="name" placeholder="Your name"><br>
+                Email: <input type="email" name="email" id="email" placeholder="ab@c.com"><br>
+                Mobile: <input type="tel" name="contact" id="contact" placeholder="Mobile no"><br>
+                Gender: <select name="gender" id="gender">
+                    <option value="male" selected>Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                    <option value="unknown">Unknown</option>
+                </select><br>
+                Date of Birth: <select name="day" id="day">
+                    <option value="day">Day</option>
+                </select>
+                <select name="month" id="month">
+                    <option value="month">Month</option>
+                </select>
+                <select name="year" id="year">
+                    <option value="year">Year</option>
+                </select><br>
+                Comment: <textarea name="comment" id="comment" cols="21" rows="3"
+                    placeholder="Write a comment here..."></textarea><br>
+                <br>
+                <input type="submit" value="Submit">
+
+                <br><br><br>
+                <input type="radio" name="gender" id="gender" value="f"> Female
+                <input type="radio" name="gender" id="gender" value="m" checked> Male
+                <input type="radio" name="gender" id="gender" value="u"> Unknown
+
+                <br><br><br>
+                <input type="checkbox" name="gender" id="gender" value="m"> Male
+                <input type="checkbox" name="gender" id="gender" value="f" checked> Female
+                <input type="checkbox" name="gender" id="gender" value="u"> Unknown
+
+                <br><br><br>
+                <input type="file" name="file" id="file" accept="image/*">
+                <input type="reset" name="reset" value="Reset" />
+                <input type="image" name="imagebutton"
+                    src="https://cdn.vuetifyjs.com/docs/images/components-temp/v-alert/v-alert-anatomy.png" />
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

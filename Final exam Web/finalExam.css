@@ -1,0 +1,27 @@
+div>p {
+    color: blue;
+}
+
+div>p:hover {
+    color: orange;
+}
+
+#red {
+    color: red;
+}
+
+#red:hover {
+    color: blue;
+}
+
+#black:hover {
+    color: red;
+}
+
+.box {
+    width: 100%;
+    height: fit-content;
+    display: inline-table;
+    border-color: black;
+
+}

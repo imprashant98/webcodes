@@ -1,0 +1,9 @@
+h1>p {
+    color: blue;
+}
+
+p,
+h1,
+h2 {
+    color: red;
+}

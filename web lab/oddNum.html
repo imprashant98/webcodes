@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      function myFunction() {
+        let sum = 0;
+        let j = 0;
+        let arr = [];
+        for (let i = 101; i <= 200; i += 2) {
+          sum += i;
+          arr[j] = i;
+          j++;
+        }
+        document.getElementById("sum").innerHTML = sum;
+        document.getElementById("arr").innerHTML = arr;
+        // document.write(sum);
+        // document.write(arr);
+      }
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Odd numbers from 100 to 200</h2>
+    <p id="arr"></p>
+    <p id="sum">The sum</p>
+    <button type="button" onclick="myFunction()">perform</button>
+  </body>
+</html>

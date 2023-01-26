@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Form</title>
+  </head>
+
+  <body>
+    <h1>Contact Form</h1>
+    <form action="#" method="post">
+      Name:
+      <input
+        type="text"
+        name="name"
+        placeholder="Your name"
+        required
+        value="your name"
+      />
+      <br />
+      Email:
+      <input
+        type="email"
+        name="email"
+        placeholder="ab@c.com"
+        required
+        value="ab@c.com"
+      />
+      <br />
+      Mobile:
+      <input
+        type="tel"
+        name="mobile"
+        placeholder="Mobile no"
+        required
+        value="12312321312"
+      />
+      <br />
+      Password:
+      <input
+        type="password"
+        id="password"
+        placeholder="Password"
+        minlength="10"
+        required
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}"
+      />
+      <br />
+      <p style="margin: 0 auto; width: 100%">
+        <input type="submit" id="submit" />
+      </p>
+    </form>
+
+    <script language="JavaScript" type="text/javascript">
+      function validate() {
+        var pass = document.getElementById("password").value;
+        console.log(pass);
+        if (pass.length < 10) {
+          alert("Password should be at least 10 characters in length");
+        } else if (!(/[0-9]/.test(pass) && /[A-Z]/.test(pass))) {
+          alert(
+            "Password should contain at least one digit and one capital letter"
+          );
+        }
+
+        // check if string contains at least 1 upper-case, 1 lower-case letter, 1 digit, 1 special character and minimum length is 10
+        // str.match(/[a-z]/g) && str.match(/[A-Z]/g) && str.match(/[0-9]/g) && str.match(/[^a-zA-Z\d]/g) && str.length >= 10
+      }
+
+      var btn = document.getElementById("submit");
+      btn.addEventListener("click", validate);
+    </script>
+
+    <!-- <form action="#">
+        <table>
+            <tr>
+                <td> Name: </td>
+                <td> <input type="text" name="name" placeholder="Your name"></td>
+            </tr>
+            <tr>
+                <td> Email: </td>
+                <td> <input type="email" name="email" placeholder="ab@c.com"> </td>
+            </tr>
+            <tr>
+                <td> Mobile: </td>
+                <td> <input type="tel" name="mobile" placeholder="Mobile no"> </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center">
+                    <input type="submit">
+                </td>
+            </tr>
+        </table>
+    </form> -->
+  </body>
+</html>

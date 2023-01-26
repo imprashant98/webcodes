@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      function myFunction() {
+        let sum = 0;
+        let j = 0;
+        let arr = [];
+        for (let i = 0; i <= 100; i += 2) {
+          sum += i;
+          arr[j] = i;
+          j++;
+        }
+        document.getElementById("sum").innerHTML = sum;
+        document.getElementById("arr").innerHTML = arr;
+      }
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Sum of Even numbers from 1 to 100</h2>
+    <p id="arr"></p>
+    <p id="sum">
+      In order to find the sum
+      <span style="color: brown"><i>Click</i></span> the button below.
+    </p>
+    <button style="color: green" type="button" onclick="myFunction()">
+      Find the Sum
+    </button>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Answer 2</title>
+</head>
+<body>
+    <p id = "m"></p>
+    <table border="1" id = 'result'>
+        
+    </table>
+
+    <script>
+        var h = " <tr> <td> I </td> <td> Factorial </td> </tr>"
+
+
+
+        const m = 5
+        document.getElementById('m').innerHTML = "M = " + m
+        var result = 1;
+        for(let i =1; i<=m; i++){
+            result = result*i
+
+            h = h + " <tr> <td>" + i +"</td> <td>" + result+ "</td> </tr>"
+        }
+
+
+        document.getElementById('result').innerHTML = h
+        
+
+    </script>
+</body>
+</html>
